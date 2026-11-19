@@ -14,19 +14,32 @@ Imamoglu's new sentence, and the GTA VI launch.
 
 ## Run it
 
+Linux / macOS:
+
 ```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
 ```
 
+Windows (PowerShell):
+
+```powershell
+mkdir out -Force
+$env:MAKEFUN_OUTPUT_DIR = "out"
+python main.py
+```
+
 `main.py` (Python 3.13, standard library only, no network) draws the
-1024x1024 PNG itself with a built-in 5x7 bitmap font and writes it to
-`/output/entry.png` (or `$MAKEFUN_OUTPUT_DIR/entry.png`). It is fully
-deterministic: two runs write identical bytes, in about 5 seconds.
+1024x1024 PNG itself with a built-in vector stroke font and writes it
+to `entry.png` inside the output folder (`out/entry.png` with the
+commands above). It is fully deterministic: two runs write identical
+bytes, in about 5 seconds.
 
 ## Sources
 
-Every story was first reported on 18 November 2026, as reported that
-day by Reuters, AP, Anadolu Agency and Outlook India.
+All 46 stories were first reported on 18 November 2026, as reported
+that day by Reuters, AP, AFP, BBC, Al Jazeera, Anadolu, Dawn,
+Bloomberg and ATP Tour. Claims that could not be independently
+confirmed are marked CLAIM in the image.
 
 ---
 
